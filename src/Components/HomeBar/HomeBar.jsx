@@ -16,7 +16,7 @@ const HomeBar = () => {
             <h4 className="text_3">Auth</h4>
           </div>
 
-          <button className="nav_btn"> Contact us</button>
+          <button className="nav_btn"> Log in</button>
         </div>
       </div>
       {/* navbar buttu */}
