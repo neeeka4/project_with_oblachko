@@ -1,4 +1,6 @@
-import React, { useReducer } from "react";
+import React, { useReducer, createContext } from "react";
+import axios from "axios";
+import { API } from "../helpers/const";
 
 export const productContext = createContext();
 
@@ -10,7 +12,7 @@ export const productContext = createContext();
 const ProductContextProvider = ({ children }) => {
   //   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
-  addProduct = async (prod) => {
+  const addProduct = async (prod) => {
     try {
       let res = await axios.post(API, prod);
     } catch (err) {

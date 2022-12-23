@@ -1,8 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
+import Admin from "./Pages/Admin";
 
-const PUBLIC_ROUTES = [{ link: "/", element: <Home />, id: 1 }];
+const PUBLIC_ROUTES = [
+  { link: "/", element: <Home />, id: 1 },
+  { link: "/admin", element: <Admin />, id: 2 },
+];
 
 const MyRoutes = () => {
   return (
