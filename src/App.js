@@ -1,15 +1,12 @@
 import "./App.css";
 import MyRoutes from "./MyRoutes";
-import Navbar from "./Components/Navbar/Navbar";
-import ProductContextProvider from "./Context/ProductContextProvider";
+import HomeBar from "./Components/HomeBar/HomeBar";
 
 function App() {
   return (
-    <div>
-      <ProductContextProvider>
-        <Navbar />
-        <MyRoutes />
-      </ProductContextProvider>
+    <div className="App">
+      {/* <MyRoutes /> */}
+      <HomeBar home={HomeBar} />
     </div>
   );
 }
