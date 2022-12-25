@@ -42,7 +42,7 @@
   width: 395px;
   height: 19px;
 
-  /* Inside auto layout */
+
 
   flex: none;
   order: 1;
@@ -62,9 +62,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
-
-  /* Inside auto layout */
+ 
 
   flex: none;
   order: 0;
@@ -131,12 +129,9 @@
   width: 149px;
   height: 51px;
 
-  /* gradient */
-
-  background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
   border-radius: 66px;
 
-  /* Inside auto layout */
+
 
   flex: none;
   order: 2;
