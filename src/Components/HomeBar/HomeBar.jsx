@@ -22,9 +22,7 @@ const HomeBar = () => {
       {/* navbar buttu */}
 
       {/* content */}
-      <div className="content">
-        <img src="./Star 1.jpg" alt="" />
-      </div>
+      <div className="content"></div>
       {/* content end */}
     </div>
   );
