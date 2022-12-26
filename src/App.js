@@ -5,8 +5,8 @@ import HomeBar from "./Components/HomeBar/HomeBar";
 function App() {
   return (
     <div className="App">
-      {/* <MyRoutes /> */}
       <HomeBar home={HomeBar} />
+      <MyRoutes route={MyRoutes} />
     </div>
   );
 }
