@@ -16,9 +16,9 @@
 .nav_menu {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  /* padding: 0px; */
   gap: 40px;
 
   width: 100%;
@@ -136,4 +136,113 @@
   flex: none;
   order: 2;
   flex-grow: 0;
+}
+
+.img_cont {
+  position: absolute;
+  bottom: -61%;
+}
+
+.img1 {
+  position: absolute;
+  width: 388px;
+  height: 463px;
+  right: 8.78%;
+  bottom: 10%;
+  border-radius: 24px;
+}
+
+.img2 {
+  position: absolute;
+  left: 59.11%;
+  right: 28.46%;
+  z-index: -1;
+
+  width: 388px;
+  height: 463px;
+  bottom: 15%;
+  border-radius: 24px;
+}
+
+.img3 {
+  position: absolute;
+  left: 72.11%;
+  right: 28.46%;
+  z-index: -1;
+  bottom: 5%;
+  width: 388px;
+  height: 463px;
+  border-radius: 24px;
+}
+
+.cont_text1 {
+  position: absolute;
+  /* display: flex; */
+
+  width: 726px;
+  height: 270px;
+  left: 121px;
+  top: 200px;
+  /* z-index: 1; */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 94px;
+  line-height: 90px;
+  /* or 96% */
+  margin: 0;
+  text-align: left;
+  letter-spacing: -2px;
+  background-color: transparent;
+
+  color: white;
+
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.cont_text2 {
+  position: absolute;
+  width: 418px;
+  height: 78px;
+  left: 271px;
+  top: 520px;
+  text-align: left;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  background-color: transparent;
+
+  color: #ffffff;
+}
+
+/* .star1 {
+  position: absolute;
+  width: 84.49px;
+  height: 84.49px;
+  left: 424px;
+  top: 405.87px;
+
+  background-color: transparent;
+  transform: rotate(-15deg);
+} */
+
+.btn_nft {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 121px;
+  top: 511px;
+
+  background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
+  border-radius: 200px;
 }
