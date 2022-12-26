@@ -1,10 +1,12 @@
 import HomeBar from "./Components/HomeBar/HomeBar";
-import AuthContextProvider from "./Context/AuthContextProvider";
+import Navbar from "./Components/Navbar/Navbar";
+import MyRoutes from "./MyRoutes";
 
 function App() {
   return (
-    <div>
-      <HomeBar home={HomeBar} />
+    <div className="App">
+      <Navbar />
+      <MyRoutes />
     </div>
   );
 }
