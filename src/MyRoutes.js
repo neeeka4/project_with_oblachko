@@ -10,7 +10,8 @@ import Add from "./Components/Admin/Add/Add";
 const MyRoutes = () => {
   return (
     <Routes>
-      <Route path="/admin" element={<Add />} />
+      <Route path="/" element={<HomeBar />} />
+      <Route path="/add" element={<Add />} />
     </Routes>
   );
 };

@@ -1,0 +1,14 @@
+* {
+  background-color: black;
+}
+
+.elips {
+  position: absolute;
+  width: 555px;
+  height: 555px;
+  left: -87px;
+  top: -41px;
+
+  background: rgba(214, 34, 218, 0.59);
+  filter: blur(247px);
+}

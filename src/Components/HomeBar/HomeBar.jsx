@@ -11,29 +11,12 @@ const HomeBar = () => {
     <div>
       {/* navbar start */}
       <div className="elips"></div>
-      <div className="nav">
-        <div className="nav_menu">
-          <div className="logo">
-            <h2 className="nav_logo">NFT</h2>
-          </div>
 
-          <div className="nav_list">
-            <Link to="/admin">
-              <h4 className="text_1">Admin</h4>
-            </Link>
-            <h4 className="text_2">MarketPlace</h4>
-            <h4 className="text_3">Auth</h4>
-            {/* <h4 className="text_3">Auth</h4> */}
-          </div>
-
-          <button className="nav_btn"> Log in</button>
-        </div>
-      </div>
       {/* navbar buttu */}
 
       {/* content */}
       <div className="content">
-        <img src={pic2} className="img1" alt="" srcset="" />
+        <img src={pic2} className="img1" alt="" />
         <img src={pic1} className="img2" alt="" />
         <img src={pic3} className="img3" alt="" />
       </div>
