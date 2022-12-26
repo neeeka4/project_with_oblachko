@@ -1,7 +1,15 @@
 import React from "react";
 import "./HomeBar.css";
+import { Link, useNavigate } from "react-router-dom";
+import { authContext } from "../../Context/AuthContextProvider";
 
 const HomeBar = () => {
+  const {
+    handleLogout,
+    user: { email },
+  } = React.useContext(authContext);
+
+  const { handleLogOut } = React.useContext(authContext);
   return (
     <div>
       {/* navbar start */}
@@ -15,8 +23,13 @@ const HomeBar = () => {
             <h4 className="text_2">MarketPlace</h4>
             <h4 className="text_3">Auth</h4>
           </div>
-
-          <button className="nav_btn"> Log in</button>
+          {email ? (
+            <button onClick={handleLogOut}>LogIn</button>
+          ) : (
+            <Link to="/auth">
+              <button>LOGIN</button>
+            </Link>
+          )}
         </div>
       </div>
       {/* navbar buttu */}

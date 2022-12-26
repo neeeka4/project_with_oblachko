@@ -1,5 +1,6 @@
 import React, { createContext, useEffect } from "react";
 import { useState } from "react";
+import fire from "firebase";
 
 export const authContext = createContext();
 const AuthContextProvider = ({ children }) => {
@@ -76,7 +77,7 @@ const AuthContextProvider = ({ children }) => {
     setEmail,
     setHasAccount,
 
-    handleLogin,
+    handleSignIn,
     handleLogOut,
     handleSignUp,
   };
