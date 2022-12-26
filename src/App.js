@@ -1,7 +1,6 @@
-import "./App.css";
-import MyRoutes from "./MyRoutes";
 import HomeBar from "./Components/HomeBar/HomeBar";
 import Navbar from "./Components/Navbar/Navbar";
+import MyRoutes from "./MyRoutes";
 
 function App() {
   return (

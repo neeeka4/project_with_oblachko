@@ -17,7 +17,9 @@ const Navbar = () => {
               <h4 className="text_1">Admin</h4>
             </Link>
             <h4 className="text_2">MarketPlace</h4>
-            <h4 className="text_3">Auth</h4>
+            <Link to="/">
+              <h4 className="text_3">Home</h4>
+            </Link>
             {/* <h4 className="text_3">Auth</h4> */}
           </div>
 
