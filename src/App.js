@@ -4,9 +4,7 @@ import AuthContextProvider from "./Context/AuthContextProvider";
 function App() {
   return (
     <div>
-      <AuthContextProvider>
-        <HomeBar />
-      </AuthContextProvider>
+      <HomeBar home={HomeBar} />
     </div>
   );
 }
