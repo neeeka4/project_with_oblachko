@@ -42,8 +42,6 @@
   width: 395px;
   height: 19px;
 
-
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -62,7 +60,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
- 
 
   flex: none;
   order: 0;
@@ -128,10 +125,8 @@
 
   width: 149px;
   height: 51px;
-
+  background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
   border-radius: 66px;
-
-
 
   flex: none;
   order: 2;

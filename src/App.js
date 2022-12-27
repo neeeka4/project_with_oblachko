@@ -6,6 +6,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="elips"></div>
+      {/* <div className="elips6"></div> */}
       <MyRoutes />
     </div>
   );

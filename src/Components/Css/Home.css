@@ -12,3 +12,14 @@
   background: rgba(214, 34, 218, 0.59);
   filter: blur(247px);
 }
+
+.elips6 {
+  position: absolute;
+  width: 427px;
+  height: 427px;
+  left: -173px;
+  top: 3814px;
+
+  background: rgba(34, 86, 218, 0.59);
+  filter: blur(247px);
+}
