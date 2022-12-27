@@ -125,12 +125,12 @@
   background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
   width: 149px;
   height: 51px;
-
+  cursor: pointer;
   border-radius: 66px;
-
   flex: none;
   order: 2;
   flex-grow: 0;
+  position: absolute;
 }
 
 .img_cont {
@@ -237,7 +237,6 @@
   height: 120px;
   left: 121px;
   top: 511px;
-
   background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
   border-radius: 200px;
 }

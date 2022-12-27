@@ -1,6 +1,7 @@
 import React, { createContext, useEffect } from "react";
 import { useState } from "react";
 import fire from "../fire";
+import auth from "../fire";
 
 export const authContext = createContext();
 const AuthContextProvider = ({ children }) => {
@@ -28,6 +29,12 @@ const AuthContextProvider = ({ children }) => {
       });
   };
 
+  // const handleSignUpWithGoogle = () => {
+  //   const provider = new fire.auth().GoogleAuthProvider();
+  //   const { user } = auth().signUpWithPopUp(provider);
+  //   console.log(user);
+  // };
+
   const handleLogOut = () => {
     fire.auth().signOut();
   };
@@ -49,9 +56,8 @@ const AuthContextProvider = ({ children }) => {
         }
       });
   };
-
   const authListener = () => {
-    fire.auth().onAuthStatusChanged((user) => {
+    fire.auth().onAuthStateChanged((user) => {
       if (user) {
         setUser(user);
       } else {
@@ -63,7 +69,6 @@ const AuthContextProvider = ({ children }) => {
   useEffect(() => {
     authListener();
   }, []);
-
   let values = {
     email,
     password,
@@ -80,6 +85,7 @@ const AuthContextProvider = ({ children }) => {
     handleSignIn,
     handleLogOut,
     handleSignUp,
+    // handleSignUpWithGoogle,
   };
   return <authContext.Provider value={values}>{children}</authContext.Provider>;
 };

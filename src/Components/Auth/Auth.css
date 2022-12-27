@@ -1,0 +1,162 @@
+* {
+  background-color: aliceblue;
+}
+
+/* Welcome Page Style Start  */
+.container {
+  display: none;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  margin-bottom: 80px;
+  margin-left: 150px;
+}
+.block_left {
+  /* background-color: white; */
+  width: 450px;
+  height: 400px;
+  margin-right: -10px;
+  margin-left: 0;
+  position: relative;
+  border-bottom-right-radius: 7%;
+  border-top-right-radius: 7%;
+  display: flex;
+}
+.block_left__title {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 127px;
+  font-family: "Inter";
+  font-size: 23px;
+  font-weight: 600;
+  color: #282f43;
+}
+.block__left_ul {
+  list-style: none;
+}
+.block__left_li1 {
+  margin-top: 100px;
+  margin-left: 29px;
+  position: relative;
+}
+.block__left_li2 {
+  margin-left: 29px;
+  /* /* position: relative;  */
+  height: 25px;
+  width: 250px;
+  height: 50px;
+}
+.inp__email_img {
+  width: 21px;
+  height: 30px;
+  position: absolute;
+  margin-left: 2px;
+}
+.inp__email {
+  width: 178px;
+  height: 20px;
+  padding-left: 5px;
+  background-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin-left: 30px;
+}
+
+.inp__password {
+  width: 178px;
+  height: 20px;
+  background-color: transparent;
+  z-index: 1;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  margin-left: 30px;
+}
+.inp__password_img {
+  width: 37px;
+  height: 36px;
+  position: absolute;
+  margin-left: -7px;
+  margin-top: -4px;
+}
+input[type="text"]::placeholder {
+  text-align: start;
+}
+.forgot__pass_img {
+  margin-left: -19px;
+  position: absolute;
+  width: 19px;
+  height: 22px;
+}
+.forgot__pass_title {
+  position: absolute;
+  color: #216ed7;
+  font-size: 10px;
+  margin-left: 130px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+.btn__signup {
+  width: 200px;
+  height: 33px;
+  border-color: aliceblue;
+  border: 3px;
+  background-color: #282f43;
+  color: aliceblue;
+  margin: 9px 3px 1px 50px;
+  cursor: pointer;
+}
+.signup__or {
+  width: 200px;
+  height: 15px;
+  margin: 20px 0px 0px 50px;
+}
+.continue__goole_btn {
+  width: 200px;
+  height: 33px;
+  border-color: #282f43;
+  border-width: 3px;
+  color: #282f43;
+  margin: 0px 3px 1px 50px;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+}
+.continue__fb_btn {
+  width: 200px;
+  height: 30px;
+  border-color: #282f43;
+  border-width: 3px;
+  margin: 0px 3px 1px 50px;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  color: #282f43;
+}
+.continue__google_img {
+  margin: -4px 8px 20px -28px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.continue__fb_img {
+  margin: -4px 15px 20px -26px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+/* Welcome Page Style END  */
+.nav_btn {
+  cursor: pointer;
+}
+.hasAccountTitle {
+  color: #282f43;
+  margin-top: 15px;
+  margin-left: 65px;
+}

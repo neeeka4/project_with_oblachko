@@ -3,12 +3,12 @@ import "firebase/compat/app";
 import "firebase/compat/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBLQtjLe_Q6u91PGU2kHzXANDsQYfsFI8w",
-  authDomain: "hackathon-e2339.firebaseapp.com",
-  projectId: "hackathon-e2339",
-  storageBucket: "hackathon-e2339.appspot.com",
-  messagingSenderId: "498094423912",
-  appId: "1:498094423912:web:ed236c7f5e6886656360dd",
+  apiKey: "AIzaSyCfAOrzEd03u8fE2XGPBprLrAdotaH6QbI",
+  authDomain: "project-with-oblachko.firebaseapp.com",
+  projectId: "project-with-oblachko",
+  storageBucket: "project-with-oblachko.appspot.com",
+  messagingSenderId: "743162372185",
+  appId: "1:743162372185:web:707f848e216ceacf901148",
 };
 
 const fire = firebase.initializeApp(firebaseConfig);
