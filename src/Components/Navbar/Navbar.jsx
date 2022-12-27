@@ -18,13 +18,15 @@ const Navbar = () => {
           </div>
 
           <div className="nav_list">
+            <Link to="/">
+              <h4 className="text_1">Home</h4>
+            </Link>
+
             <Link to="/add">
-              <h4 className="text_1">Admin</h4>
+              <h4 className="text_3">Admin</h4>
             </Link>
             <h4 className="text_2">MarketPlace</h4>
-            <Link to="/">
-              <h4 className="text_3">Home</h4>
-            </Link>
+
             {/* <h4 className="text_3">Auth</h4> */}
           </div>
 

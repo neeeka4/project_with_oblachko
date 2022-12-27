@@ -9,7 +9,6 @@ const HomeBar = () => {
   return (
     <div>
       {/* navbar start */}
-      <div className="elips"></div>
 
       {/* navbar buttu */}
 
