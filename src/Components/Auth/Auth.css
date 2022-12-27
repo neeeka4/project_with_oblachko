@@ -1,11 +1,11 @@
 * {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 
 /* Welcome Page Style Start  */
 .container {
   display: none;
-  position: relative;
+  /* position: relative; */
   width: 600px;
   height: 400px;
   display: flex;
@@ -18,7 +18,7 @@
   height: 400px;
   margin-right: -10px;
   margin-left: 0;
-  position: relative;
+  /* position: relative; */
   border-bottom-right-radius: 7%;
   border-top-right-radius: 7%;
   display: flex;
@@ -38,7 +38,7 @@
 .block__left_li1 {
   margin-top: 100px;
   margin-left: 29px;
-  position: relative;
+  /* position: relative; */
 }
 .block__left_li2 {
   margin-left: 29px;

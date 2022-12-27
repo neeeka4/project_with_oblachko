@@ -130,7 +130,7 @@
   flex: none;
   order: 2;
   flex-grow: 0;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .img_cont {
