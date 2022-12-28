@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "./HomeBar.css";
+import "./Navbar.css";
 import { authContext } from "../../Context/AuthContextProvider";
 
 const Navbar = () => {
@@ -29,14 +29,13 @@ const Navbar = () => {
 
             {/* <h4 className="text_3">Auth</h4> */}
           </div>
-
           {email ? (
-            <button onClick={handleLogout} class="nav_btn">
+            <button onClick={handleLogout} className="nav_btn">
               LOGOUT
             </button>
           ) : (
             <Link to="/auth">
-              <button class="nav_btn">LOGIN</button>
+              <button className="nav_btn">LOGIN</button>
             </Link>
           )}
         </div>
