@@ -1,5 +1,5 @@
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Grid, Link } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import { Link } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useContext } from "react";
 import { authContext } from "../../Context/AuthContextProvider";
@@ -29,7 +29,6 @@ const Auth = () => {
     handleLogin,
     handleLogOut,
     handleSignUp,
-    handleSignUpWithGoogle,
   } = useContext(authContext);
   console.log(user.email);
 
@@ -46,7 +45,7 @@ const Auth = () => {
     <Box>
       <div id="sign" class="container">
         <div class="block_left">
-          <h3 class="block_left__title">Welcome</h3>
+          <h3 class="block_left__title"></h3>
           <ul class="block__left_ul">
             <li class="block__left_li1">
               <img src={pic6} alt="" class="inp__email_img" />

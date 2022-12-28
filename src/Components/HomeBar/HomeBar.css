@@ -8,7 +8,6 @@
   height: 555px;
   left: -87px;
   top: -41px;
-
   background: rgba(214, 34, 218, 0.59);
   filter: blur(247px);
 }
@@ -75,9 +74,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-
-  color: #ffffff;
-
+  color: #001447;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -93,7 +90,7 @@
   font-size: 16px;
   line-height: 19px;
 
-  color: #ffffff;
+  color: #001447;
 
   flex: none;
   order: 0;
@@ -108,7 +105,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: #001447;
 
   flex: none;
   order: 0;
@@ -190,7 +187,7 @@
   letter-spacing: -2px;
   background-color: transparent;
 
-  color: white;
+  color: #001447;
 
   /* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
@@ -210,7 +207,7 @@
   /* or 162% */
   background-color: transparent;
 
-  color: #ffffff;
+  color: #001447;
 }
 
 /* .star1 {
