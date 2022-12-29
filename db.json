@@ -1,16 +1,18 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "pflg",
+      "img": "https://i.pinimg.com/564x/13/a2/e0/13a2e038c3795e4837fdde26d094c001.jpg",
+      "type": "dfg",
+      "price": "123",
+      "id": 7
     },
     {
       "title": "sdf",
-      "img": "df",
+      "img": "https://i.pinimg.com/564x/13/a2/e0/13a2e038c3795e4837fdde26d094c001.jpg",
       "type": "sdf",
-      "price": "12345",
-      "id": 2
+      "price": "1234",
+      "id": 8
     }
   ]
 }

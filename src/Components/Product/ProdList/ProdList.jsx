@@ -1,12 +1,16 @@
-import React from "react";
-import OneProd from "../OneProd/OneProd";
+import React, { useContext, useEffect } from "react";
+
+import { productContext } from "../../../Context/ProductContextProvider";
 
 const ProdList = () => {
-  return (
-    <div>
-      <OneProd />
-    </div>
-  );
+  const { products, getProducts } = useContext(productContext);
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+
+  console.log(products);
+  return <div></div>;
 };
 
 export default ProdList;

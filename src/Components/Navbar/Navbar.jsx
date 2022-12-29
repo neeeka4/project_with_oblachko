@@ -25,7 +25,9 @@ const Navbar = () => {
             <Link to="/add">
               <h4 className="text_3">Admin</h4>
             </Link>
-            <h4 className="text_2">MarketPlace</h4>
+            <Link to="/products">
+              <h4 className="text_2">MarketPlace</h4>
+            </Link>
 
             {/* <h4 className="text_3">Auth</h4> */}
           </div>
