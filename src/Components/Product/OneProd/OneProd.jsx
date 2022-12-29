@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { productContext } from "../../../Context/ProductContextProvider";
 
 export default function OneProd({ item }) {
-  const { deleteProduct } = useContext(productContext);
   const navigate = useNavigate();
   return (
     <div>
