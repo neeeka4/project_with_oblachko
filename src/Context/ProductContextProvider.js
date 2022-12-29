@@ -1,6 +1,6 @@
-import { API } from "../helpers/const";
+import React, { useReducer, createContext } from "react";
 import axios from "axios";
-import React, { createContext, useReducer } from "react";
+import { API } from "../helpers/const";
 import { useLocation, useNavigate } from "react-router-dom";
 
 export const productContext = createContext();
@@ -12,9 +12,9 @@ const INIT_STATE = {
 
 function reducer(state = INIT_STATE, action) {
   switch (action.type) {
-    case "GET_PRODUCTS":
+    case "get_products":
       return { ...state, products: action.payload };
-    case "GET_PRODUCT_DETAIL":
+    case "get_product_detail":
       return { ...state, productDetails: action.payload };
     default:
       return state;
@@ -31,20 +31,12 @@ const ProductContextProvider = ({ children }) => {
     try {
       let res = await axios.get(`${API}${window.location.search}`);
       dispatch({
-        type: "GET_PRODUCTS",
+        type: "get_products",
         payload: res.data,
       });
     } catch (err) {
       console.log(err);
     }
-  };
-
-  const getProductDetails = async (id) => {
-    const res = await axios.get(`${API}/${id}`);
-    dispatch({
-      type: "GET_PRODUCT_DETAIL",
-      payload: res.data,
-    });
   };
 
   const saveEditProduct = async (newProduct, id) => {
@@ -64,27 +56,6 @@ const ProductContextProvider = ({ children }) => {
     await axios.delete(`${API}/${id}`);
     getProducts();
   };
-
-  // ! FIlTER
-
-  const fetchByParams = async (query, value) => {
-    const search = new URLSearchParams(location.search);
-    // https://github.com/typicode/json-server/?q
-    if (value === "all") {
-      search.delete(query);
-    } else {
-      search.set(query, value);
-    }
-
-    const url = `${location.pathname}?${search.toString()}`;
-    // console.log(location);
-    console.log(search);
-    console.log(search.toString());
-    // console.log(url);
-    // console.log(window.location.search);
-    navigate(url);
-  };
-
   return (
     <productContext.Provider
       value={{
@@ -93,9 +64,7 @@ const ProductContextProvider = ({ children }) => {
         addProduct,
         getProducts,
         deleteProduct,
-        getProductDetails,
         saveEditProduct,
-        fetchByParams,
       }}
     >
       {children}
