@@ -1,6 +1,7 @@
 import React, { useReducer, createContext } from "react";
 import axios from "axios";
 import { API } from "../helpers/const";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const productContext = createContext();
 
@@ -20,18 +21,46 @@ function reducer(state = INIT_STATE, action) {
   }
 }
 
-const getProducts = async () => {
-  try {
-    let res = await axios.get(`${API}${window.location.search}`);
-    dispatch({
-      type: "get_products",
-      payload: res.data,
-    });
-  } catch (err) {
-    console.log(err);
-  }
-};
+const ProductContextProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
-return <productContext.Provider value={{}}>{children}</productContext.Provider>;
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const getProducts = async () => {
+    try {
+      let res = await axios.get(`${API}${window.location.search}`);
+      dispatch({
+        type: "get_products",
+        payload: res.data,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const saveEditProduct = async (newProduct, id) => {
+    await axios.patch(`${API}/${id}`, newProduct);
+    getProducts();
+  };
+
+  const addProduct = async (prod) => {
+    try {
+      let res = await axios.post(API, prod);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const deleteProduct = async (id) => {
+    await axios.delete(`${API}/${id}`);
+    getProducts();
+  };
+  return (
+    <productContext.Provider value={{ addProduct, getProducts, deleteProduct }}>
+      {children}
+    </productContext.Provider>
+  );
+};
 
 export default ProductContextProvider;

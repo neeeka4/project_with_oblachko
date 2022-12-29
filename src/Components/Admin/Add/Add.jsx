@@ -1,11 +1,11 @@
 import React, { useContext, useState } from "react";
 import "./Add.css";
-// import { useNavigate } from "react-router-dom";
-// import { productContext } from "../../../Context/ProductContextProvider";
+import { useNavigate } from "react-router-dom";
+import { productContext } from "../../../Context/ProductContextProvider";
 
 const Add = () => {
-  // const { addProduct } = useContext(productContext);
-  // const navigate = useNavigate();
+  const { addProduct } = useContext(productContext);
+  const navigate = useNavigate();
 
   const [product, setProduct] = useState({
     title: "",
@@ -58,8 +58,8 @@ const Add = () => {
         <button
           className="add_btn"
           onClick={() => {
-            // addProduct(product);
-            // navigate("/products");
+            addProduct(product);
+            navigate("/products");
           }}
         >
           Add

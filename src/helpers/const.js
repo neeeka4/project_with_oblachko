@@ -1,4 +1,4 @@
-export const API = "http://localhost:8000/products";
+export const API = "http://localhost:8000/posts";
 // import { LockOutlined } from "@mui/icons-material";
 // import {
 //   Avatar,

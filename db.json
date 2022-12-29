@@ -4,6 +4,13 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "title": "sdf",
+      "img": "df",
+      "type": "sdf",
+      "price": "12345",
+      "id": 2
     }
   ]
 }

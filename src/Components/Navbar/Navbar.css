@@ -100,7 +100,7 @@
   font-size: 16px;
   line-height: 19px;
 
-  color: #ffffff;
+  color: linear-gradient(101.54deg, #b235ff -9.3%, #001447 70.99%);
 
   flex: none;
   order: 0;
@@ -117,7 +117,7 @@
   font-size: 16px;
   line-height: 19px;
 
-  color: #ffffff;
+  color: linear-gradient(101.54deg, #b235ff -9.3%, #001447 70.99%);
 
   flex: none;
   order: 0;
@@ -132,7 +132,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: linear-gradient(101.54deg, #b235ff -9.3%, #001447 70.99%);
 
   flex: none;
   order: 0;
